@@ -1,0 +1,46 @@
+.home {
+    padding: 6.2rem 0;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    &__content {
+        max-width: 54.9rem;
+    }
+
+    &__title {
+        font-family: $Inter-Bold;
+        font-size: 4.5rem;
+        line-height: 1.1;
+        color: $color-dark-silver;
+    }
+
+    &__description {
+        margin-top: 4.2rem;
+        font-size: 2rem;
+        line-height: 1.75;
+        color: $color-granite-gray;
+    }
+
+    &__link {
+        display: inline-flex;
+        margin-top: 4.8rem;
+        padding: 1.4rem 2.7rem;
+        border: 2px solid $color-deep-carrot-orange;
+        border-radius: 10px;
+        font-size: 1.6rem;
+        line-height: 1;
+        text-transform: uppercase;
+        color: $color-rich-black;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            color: $color-white;
+            background-color: $color-deep-carrot-orange;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+.footer {
+    padding: 5.1rem 0;
+    background-color: $color-white;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 2rem;
+        line-height: 1;
+
+        @include breakpoint($mobile-width) {
+            
+        }
+    }
+
+    &__box {
+        display: flex;
+        gap: 2rem;
+    }
+
+    &__github {
+        display: flex;
+        align-items: center;
+        color: $color-rich-black;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            color: $color-deep-carrot-orange;
+        }
+    }
+
+    &__school {
+        color: $color-rich-black;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            color: $color-deep-carrot-orange;
+        }
+    }
+
+    &__social-list {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    &__social-list-item {
+
+    }
+
+    &__social-list-link {
+        display: flex;
+        color: $color-rich-black;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            color: $color-deep-carrot-orange;
+        }
+    }
+
+    &__social-list-icon {
+        fill: currentColor;
+    }
+
+}

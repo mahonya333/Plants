@@ -1,0 +1,12 @@
+/*
+    Пример подключения шрифта woff/woff2
+    https://css-tricks.com/snippets/css/using-font-face/
+*/
+
+/*Шрифт Aleo*/
+@include fontFace('Inika-Regular', '../../fonts/Inika/Inika-Regular', 400);
+@include fontFace('Inika-Bold', '../../fonts/Inika/Inika-Bold', 700);
+
+/*Шрифт RedHatText*/
+@include fontFace('Inter-Regular', '../../fonts/Inter/Inter-Regular', 400);
+@include fontFace('Inter-Bold', '../../fonts/Inter/Inter-Bold', 700);

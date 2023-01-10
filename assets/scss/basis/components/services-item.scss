@@ -1,0 +1,29 @@
+.services-item {
+    max-width: 32.9rem;
+
+    &__img {
+        display: block;
+        object-fit: cover;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    &__content {
+        padding: 1rem 1rem 3.6rem 1rem;
+        border: 1px solid $color-white-coffee;
+        border-radius: 0px 0px 20px 20px;
+        text-align: center;
+    }
+
+    &__name {
+        font-family: $Inter-Bold;
+        font-size: 2rem;
+        line-height: 1;
+        color: $color-deep-carrot-orange;
+    }
+
+    &__description {
+        margin-top: 1rem;
+        font-size: 1.6rem;
+        color: $color-dark-silver;
+    }
+}

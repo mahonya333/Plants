@@ -1,0 +1,39 @@
+//https://www.color-name.com/ генератор названия цвета
+$color-black: #000000;
+$color-white: #ffffff;
+$color-isabelline: #edf2ec;
+$color-rich-black: #010201;
+$color-slimy-green: #499A18;
+$color-deep-carrot-orange: #e06733;
+$color-dark-silver: #717171;
+$color-granite-gray: #636060;
+$color-white-coffee: #e3e1d5;
+$color-w: #d9d9d9;
+$color-w2: #D6E7D2;
+$color-w3: #AEA1A1;
+
+
+
+$fonts-sans-serif:  BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+"Segoe UI Symbol";
+
+$fonts-serif: serif;
+
+
+$Inika-Regular: "Inika-Regular", $fonts-serif;
+$Inika-Bold: "Inika-Bold", $fonts-serif;
+
+$Inter-Regular: "Inter-Regular", $fonts-sans-serif;
+$Inter-Bold: "Inter-Bold", $fonts-sans-serif;
+
+
+/* $container-width: 124rem; */
+$container-width: 144rem; 
+$min-width: 32rem;
+
+
+$notebook-width: 1366px;
+$laptop-width: 1179px;
+$tablet-width: 1023px;
+$mobile-width: 767px;
+$mobile-width-small: 375px;

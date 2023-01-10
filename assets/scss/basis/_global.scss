@@ -1,0 +1,213 @@
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    min-width: $min-width;
+    font-family: $Inter-Regular;
+    line-height: 1.25;
+    color: $color-rich-black;
+    background-color: $color-isabelline;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: $Inter-Regular;
+    font-size: 1.4rem;
+    outline: none;
+}
+
+address {
+    font-style: normal;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    font-size: 1.4rem;
+}
+
+img,
+video {
+    height: auto;
+    max-width: 100%;
+}
+
+picture {
+    display: flex;
+}
+
+label {
+    cursor: pointer;
+    user-select: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+blockquote,
+body,
+dd,
+dl,
+dt,
+fieldset,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+html,
+iframe,
+legend,
+li,
+ol,
+p,
+pre,
+textarea,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+input[placeholder] {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* .responsive-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+
+    iframe,
+    object,
+    embed {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+} */
+
+.btn {
+    @include button-reset;
+    padding: 1.4rem 3rem;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: $container-width;
+    padding: 0 10.9rem;
+
+    @include breakpoint($mobile-width) {
+        padding-right: 1.6rem;
+        padding-left: 1.6rem;
+    }
+}
+
+.site-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+
+    &._false-scroll {
+        height: 100vh;
+    }
+}
+
+
+.site-content {
+    position: relative;
+    flex: 1 0 auto;
+}
+
+.bg-cover {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+._hidden-visible {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    margin: -1px;
+    overflow: hidden;
+}
+
+._hidden-mobile {
+    @include breakpoint($mobile-width) {
+        display: none !important;
+    }
+}
+
+._visible-mobile {
+    display: none !important;
+
+    @include breakpoint($mobile-width) {
+        display: block !important;
+    }
+}
+
+.green {
+    color: $color-slimy-green;
+}
+
+.red {
+    color: $color-deep-carrot-orange;
+}

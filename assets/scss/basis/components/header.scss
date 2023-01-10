@@ -1,0 +1,22 @@
+.header {
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        padding: 4.2rem 0;
+    }
+
+    &__buger-btn {
+        display: none;
+
+        @include breakpoint($tablet-width) {
+            display: flex;
+        }
+    }
+
+    &__buger-btn-icon {
+        transition: all .3s ease-in-out;
+    }
+}
