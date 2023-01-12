@@ -1,15 +1,44 @@
 .home {
     padding: 6.2rem 0;
 
+    @include breakpoint($tablet-width) {
+        padding: 4rem 0 7rem;
+    }
+
+    @include breakpoint($mobile-width) {
+        padding: 2.4rem 0;
+    }
+
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 2rem;
+
+        @include breakpoint($tablet-width) {
+            align-items: flex-start;
+        }
+    }
+
+    &__img {
+        max-width: 44.8rem;
+
+        @include breakpoint($tablet-width) {
+            max-width: 28rem;
+            order: 1;
+        }
     }
 
     &__content {
         max-width: 54.9rem;
+
+        @include breakpoint($tablet-width) {
+            max-width: 34.1rem;
+        }
+
+        @include breakpoint($mobile-width) {
+            max-width: 100%;
+        }
     }
 
     &__title {
@@ -17,6 +46,15 @@
         font-size: 4.5rem;
         line-height: 1.1;
         color: $color-dark-silver;
+
+        @include breakpoint($tablet-width) {
+            font-size: 3.5rem;
+            line-height: 1.4;
+        }
+
+        @include breakpoint($mobile-width) {
+            font-size: 2.5rem;
+        }
     }
 
     &__description {
@@ -24,12 +62,22 @@
         font-size: 2rem;
         line-height: 1.75;
         color: $color-granite-gray;
+
+        @include breakpoint($tablet-width) {
+            margin-top: 3rem;
+            font-size: 1.6rem;
+            line-height: 1.56;
+        }
+
+        @include breakpoint($mobile-width) {
+            margin-top: 2rem;
+        }
     }
 
     &__link {
         display: inline-flex;
         margin-top: 4.8rem;
-        padding: 1.4rem 2.7rem;
+        padding: 1.2rem 2.6rem;
         border: 2px solid $color-deep-carrot-orange;
         border-radius: 10px;
         font-size: 1.6rem;
@@ -37,6 +85,17 @@
         text-transform: uppercase;
         color: $color-rich-black;
         transition: all .3s ease-in-out;
+
+        @include breakpoint($tablet-width) {
+            margin-top: 3rem;
+        }
+
+        @include breakpoint($mobile-width) {
+            margin-top: 2rem;
+            padding: 0.8rem 1.6rem;
+            font-size: 1rem;
+            line-height: 1.4;
+        }
 
         &:hover {
             color: $color-white;

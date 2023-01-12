@@ -141,7 +141,11 @@ input[placeholder] {
     margin-right: auto;
     width: 100%;
     max-width: $container-width;
-    padding: 0 10.9rem;
+    padding: 0 2rem;
+
+    @include breakpoint($tablet-width) {
+        padding: 0 5rem;
+    }
 
     @include breakpoint($mobile-width) {
         padding-right: 1.6rem;

@@ -19,23 +19,6 @@ window.addEventListener('DOMContentLoaded', () => {
         closeElement('#modal');
     });
 
-    document.querySelector('.open-modal').addEventListener('click', function (event) {//Ведущиая в никуда ссылка в меню навигации закрывающая меню навигации
-        event.preventDefault();
-        closeElement('#navigation');
-        openElement('#modal');
-    });
-    document.querySelector('#openLoginForm').addEventListener('click', function (event) {//Ведущиая в никуда ссылка в меню навигации закрывающая меню навигации
-        event.preventDefault();
-        toggleElementScroll('.site-wrapper');
-        openElement('.shadow-box');
-        openElement('#modal');
-    });
-
-    document.querySelector('#modalRegisterBtn').addEventListener('click', function (event) {//Ведущиая в никуда ссылка в меню навигации закрывающая меню навигации
-        event.preventDefault();
-        openRegisterForm('#modal');
-    });
-
     document.querySelector('#navigation')?.addEventListener('click', function (event) {//Навигация, где отслеживается клик по ссылке для закрытия самой навигации
         const target = event.target;
 
