@@ -2,11 +2,29 @@
     padding: 9.3rem 0;
     background-color: $color-white;
 
+    @include breakpoint($tablet-width) {
+        padding: 4rem 0 9.5rem;
+    }
+
+    @include breakpoint($mobile-width) {
+        padding: 3rem 0;
+    }
+
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 2rem;
+
+        @include breakpoint($tablet-width) {
+            flex-direction: column;
+            gap: 4rem;
+        }
+
+        @include breakpoint($mobile-width) {
+            gap: 0.5rem;
+        }
+    
     }
 
     &__content {
@@ -17,6 +35,14 @@
         font-size: 4rem;
         line-height: 1.3;
         color: $color-dark-silver;
+
+        @include breakpoint($tablet-width) {
+            font-size: 3.5rem;
+        }
+
+        @include breakpoint($mobile-width) {
+            font-size: 2.5rem;
+        }
     }
 
     &__description {
@@ -24,5 +50,24 @@
         font-size: 2rem;
         line-height: 1.5;
         color: $color-granite-gray;
+
+        @include breakpoint($mobile-width) {
+            margin-top: 2.1rem;
+            font-size: 1.5rem;
+            line-height: 1.66;
+        }
+    }
+
+    &__img {
+        max-width: 46.4rem;
+        
+        @include breakpoint($tablet-width) {
+            max-width: 25rem;
+            font-size: 3.5rem;
+        }
+
+        @include breakpoint($mobile-width) {
+            max-width: 15rem;
+        }
     }
 }

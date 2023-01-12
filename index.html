@@ -108,8 +108,14 @@
                                     typesetting, remaining essentially unchanged.
                                 </p>
                             </div>
-                            <img class="about__img" src="./plants/img/desktop/houseplant.png" width="464" height="479"
-                                alt="house plant">
+
+
+                                <picture class="about__img">
+                                    <source media="(max-width: 1024px)" srcset="./plants/img/tablet/houseplant.png">
+                                    <source media="(max-width: 768px)" srcset="./plants/img/mobile/houseplant.png">
+                                    <img src="./plants/img/desktop/houseplant.png" width="464" height="479"
+                                    alt="house plant">
+                                </picture>
                         </div>
                     </div>
                 </section>
