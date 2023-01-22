@@ -2,6 +2,16 @@
     padding: 5.1rem 0;
     background-color: $color-white;
 
+    @include breakpoint($tablet-width) {
+        padding-top: 3.3rem;
+        padding-bottom: 3rem;
+    }
+
+    @include breakpoint($mobile-width) {
+        padding-top: 2.2rem;
+        padding-bottom: 1.8rem;
+    }
+
     &__inner {
         display: flex;
         align-items: center;
@@ -9,8 +19,9 @@
         font-size: 2rem;
         line-height: 1;
 
-        @include breakpoint($mobile-width) {
-            
+        @include breakpoint($tablet-width) {
+            flex-direction: column;
+            row-gap: 1.6rem;
         }
     }
 
@@ -43,10 +54,15 @@
         display: flex;
         align-items: center;
         gap: 2rem;
-    }
 
-    &__social-list-item {
+        @include breakpoint($tablet-width) {
+            gap: 3rem;
+            padding: 1.1rem;
+        }
 
+        @include breakpoint($mobile-width) {
+            padding: 0;
+        }
     }
 
     &__social-list-link {
