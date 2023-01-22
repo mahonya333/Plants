@@ -252,8 +252,7 @@
                                 <button class="btn price__btn">Contact us</button>
 
                                 <picture class="price__img">
-                                    <img src="./plants/img/tablet/leafs.png" width="293"
-                                        height="271" alt="leafs">
+                                    <img src="./plants/img/tablet/leafs.png" width="293" height="271" alt="leafs">
                                 </picture>
 
 
@@ -276,8 +275,14 @@
                                     </svg>
                                 </button>
                             </div>
-                            <img class="contacts__img" src="./plants/img/desktop/woman-img.png" width="400" height="497"
-                                alt="woman">
+
+                            <picture class="contacts__img">
+                                <source media="(max-width: 1024px)" srcset="./plants/img/tablet/woman-img.png">
+                                <source media="(max-width: 768px)" srcset="./plants/img/mobile/woman-img.png">
+                                <img src="./plants/img/desktop/woman-img.png" width="400"
+                                    height="497" alt="woman">
+                            </picture>
+
                         </div>
                     </div>
                 </section>
