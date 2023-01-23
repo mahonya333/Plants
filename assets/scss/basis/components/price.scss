@@ -51,6 +51,8 @@
         }
 
         &--tablet {
+            display: none;
+            
             @include breakpoint($tablet-width) {
                 display: block;
                 margin-bottom: 5rem;
