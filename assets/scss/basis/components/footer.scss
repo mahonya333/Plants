@@ -21,7 +21,7 @@
 
         @include breakpoint($tablet-width) {
             flex-direction: column;
-            row-gap: 1.6rem;
+            row-gap: 2rem;
         }
     }
 
@@ -45,6 +45,10 @@
         padding-left: 1.4rem;
         color: $color-rich-black;
         transition: all .3s ease-in-out;
+
+        @include breakpoint($tablet-width) {
+            padding-left: 0;
+        }
 
         &:hover {
             color: $color-deep-carrot-orange;
