@@ -1,5 +1,5 @@
 .price {
-    padding: 4rem 0 11.5rem;
+    padding: 4rem 0 11.7rem;
     background-color: $color-white;
 
     @include breakpoint($tablet-width) {
@@ -45,6 +45,7 @@
     &__title {
         font-family: $Inter-Bold;
         font-size: 4rem;
+        line-height: 1.19;
 
         @include breakpoint($tablet-width) {
             display: none;

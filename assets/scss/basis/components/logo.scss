@@ -1,6 +1,6 @@
 .logo {
     display: inline-flex;
-    align-items: center;
+    align-items: baseline;
     gap: 0;
 
     &:hover {
@@ -13,7 +13,7 @@
     &__text {
         font-family: $Inika-Regular;
         font-size: 1.6rem;
-        line-height: 1;
+        line-height: 2;
         color: $color-rich-black;
         transition: all .3s ease-in-out;
     }

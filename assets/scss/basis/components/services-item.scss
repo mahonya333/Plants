@@ -1,5 +1,5 @@
 .services-item {
-    max-width: 32.9rem;
+    max-width: 33rem;
 
 
     @include breakpoint($tablet-width) {
@@ -23,7 +23,7 @@
     }
 
     &__content {
-        padding: 0.9rem 1rem 3.6rem 1rem;
+        padding: 1rem 1rem 3.6rem 1rem;
         border: 1px solid $color-white-coffee;
         border-radius: 0px 0px 20px 20px;
         text-align: center;
