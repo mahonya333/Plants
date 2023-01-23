@@ -78,6 +78,7 @@
         @include breakpoint($tablet-width) {
             position: static;
             max-width: 20rem;
+            margin-left: 2rem;
         }
 
         @include breakpoint($mobile-width) {
