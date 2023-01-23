@@ -61,8 +61,12 @@
         line-height: 1.5;
         color: $color-granite-gray;
 
+        
+        @include breakpoint($tablet-width) {
+            margin-top: 5.1rem;
+        }
+
         @include breakpoint($mobile-width) {
-            margin-top: 5rem;
             font-size: 1.5rem;
             line-height: 1.66;
         }
