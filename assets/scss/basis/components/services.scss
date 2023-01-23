@@ -3,7 +3,7 @@
 
 
     @include breakpoint($tablet-width) {
-        padding: 6rem 0 7rem;
+        padding: 6rem 0 6.5rem;
     }
 
     @include breakpoint($mobile-width) {
@@ -87,7 +87,7 @@
         @include breakpoint($tablet-width) {
             align-items: flex-start;
             margin-top: 4rem;
-            grid-row-gap: 3.8rem;
+            grid-row-gap: 3.6rem;
         }
 
         @include breakpoint($mobile-width) {
