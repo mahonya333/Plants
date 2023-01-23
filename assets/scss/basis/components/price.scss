@@ -17,11 +17,8 @@
         justify-content: space-between;
         gap: 2rem;
 
-        @include breakpoint($mobile-width) {
+        @include breakpoint($tablet-width) {
             gap: 0.5rem;
-            flex-direction: column;
-            max-width: 22.4rem;
-            margin: 0 auto;
         }
 
         @include breakpoint($mobile-width) {
