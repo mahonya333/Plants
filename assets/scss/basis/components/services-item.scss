@@ -44,5 +44,9 @@
         margin-top: 1.3rem;
         font-size: 1.6rem;
         color: $color-dark-silver;
+
+        @include breakpoint($tablet-width) {
+            margin-top: 1rem;
+        }
     }
 }

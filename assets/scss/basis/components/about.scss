@@ -3,7 +3,7 @@
     background-color: $color-white;
 
     @include breakpoint($tablet-width) {
-        padding: 4rem 0 9.5rem;
+        padding: 4rem 0 9.6rem;
     }
 
     @include breakpoint($mobile-width) {
@@ -18,7 +18,7 @@
 
         @include breakpoint($tablet-width) {
             flex-direction: column;
-            gap: 4rem;
+            gap: 6.8rem;
         }
 
         @include breakpoint($mobile-width) {
@@ -30,6 +30,11 @@
     &__content {
         max-width: 60.5rem;
         padding-top: 0.7rem;
+        
+        @include breakpoint($tablet-width) {
+            max-width: 100%;
+            padding-top: 0;
+        }
     }
 
     &__title {
@@ -40,7 +45,9 @@
         color: $color-dark-silver;
 
         @include breakpoint($tablet-width) {
+            margin: 0 auto;
             font-size: 3.5rem;
+            text-align: center;
         }
 
         @include breakpoint($mobile-width) {
@@ -55,7 +62,7 @@
         color: $color-granite-gray;
 
         @include breakpoint($mobile-width) {
-            margin-top: 2.1rem;
+            margin-top: 5rem;
             font-size: 1.5rem;
             line-height: 1.66;
         }
