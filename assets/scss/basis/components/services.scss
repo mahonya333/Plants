@@ -7,7 +7,7 @@
     }
 
     @include breakpoint($mobile-width) {
-        padding: 3rem 0 2.7rem;
+        padding: 3rem 0 2.5rem;
     }
 
     &__head {
@@ -23,7 +23,7 @@
         }
 
         @include breakpoint($mobile-width) {
-            gap: 3.5rem;
+            gap: 3.9rem;
         }
     }
 
@@ -91,8 +91,9 @@
         }
 
         @include breakpoint($mobile-width) {
+            grid-row-gap: 3.2rem;
+            margin-top: 3.9rem;
             padding: 0 2.5rem;
-            grid-row-gap: 3.4rem;
         }
     }
 }

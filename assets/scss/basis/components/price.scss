@@ -46,7 +46,9 @@
             }
 
             @include breakpoint($mobile-width) {
+                gap: 0.5rem;
                 align-items: center;
+                padding-top: 0;
             }
         }
     }
@@ -71,7 +73,8 @@
             }
 
             @include breakpoint($mobile-width) {
-                margin-bottom: 4rem;
+                margin-bottom: 3.9rem;
+                padding-left: 0;
                 font-size: 2.5rem;
                 text-align: center;
             }
@@ -95,6 +98,7 @@
             margin-bottom: 1.4rem;
             font-size: 2rem;
             line-height: 1.75;
+            letter-spacing: -0.2rem;
             text-align: center;
         }
     }
